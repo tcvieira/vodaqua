@@ -1,0 +1,95 @@
+.gradient-text {
+    position: relative;
+    text-shadow: .15em .15em .35em #888;
+    padding: .5em;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: radial-gradient(circle at 70% 3%, #3498db, #e74c3c);
+        mix-blend-mode: screen;
+    }
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+a {
+    color: #a2d0f7;
+}
+
+a:focus, a:hover {
+    color: #5db2ff;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Milkshake';
+    src: url('../fonts/Milkshake.ttf') format('truetype');
+    /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'fontawesome';
+    src: url('../fonts/fontawesome-webfont.eot');
+    src: url('../fonts/fontawesome-webfont.eot') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat-Regular'), url('../fonts/Montserrat.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+body {
+    font: 14px/1 'Montserrat', 'Open Sans', helvetica, sans-serif;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    background: #0D47A1;
+    /*background: -webkit-linear-gradient(left top, #000428, #004e92);
+  background: linear-gradient(to bottom right, #000428, #004e92);*/
+}
+
+.title {
+    font: 38px/1 'Milkshake', helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: white;
+    font-size: 20vw;
+}
+
+.credits {
+    font: 38px/1 'Milkshake', helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: white;
+    font-size: 4vw;
+}
+
+.centered {
+    margin: auto;
+    /*width: 50%;*/
+    text-align: center;
+}
+
+.btn-store {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    position: fixed;
+    height: 8vh;
+    bottom: 0;
+    width: 100%;
+    color: #0D47A1;
+    background: #E3F2FD;
+}
